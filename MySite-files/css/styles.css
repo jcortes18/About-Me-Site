@@ -1,0 +1,155 @@
+/*
+-parent - body
+-hierarchy -  will do child first then parent
+-margin: top right bottom left
+  or margin: top/bottom right/left
+-width - can be percentages. element will be 30% of site width
+-font-family: font, fallback font, fallback font, fallback font, ..;
+  use cssfontstack.com for popular fonts with fallback options
+-font-size: 100% = 16px = 1em = 1rem
+  if you want 90px size in % then 90px/16px = 5.625em = 562.5%
+  -% and em are dynamic sizes for users using zoom and font sizes(impared)
+  -px are static and will not change size
+  -rem will ignore all parent size settings and will use the rem
+    easier to debug, most adaptable and least error prone.
+-line-height: 2 (no px,rem,..)
+  -changes height of text/line.
+- float:left - displays 2 elements together on 1 line
+-clear: left - is the anti-float, left margin is clear and not wrapped around anything
+*/
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #40514E;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Clicker Script', cursive;
+  font-size: 6rem;
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.6rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+  font-weight: bolder;
+}
+
+a {
+  color: #11999E;
+}
+
+hr {
+  /*use MDN for border style properties*/
+  border-style: none;
+  border-top-style: dotted;
+  border-top-color: grey;
+  border-top-width: 5px;
+  width: 5%;
+  margin: 100px auto;
+}
+
+.topContainter {
+  padding-top: 100px;
+  background-color: #f7fbe1;
+  position: relative;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.profile-pic {
+  width: 15rem;
+  margin-top: 100px;
+}
+
+.intro-paragraph {
+  width: 40%;
+  margin: auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+
+}
+p{
+  line-height: 2;
+}
+
+.web-dev-image {
+  width: 12rem;
+  float: left;
+  margin-right: 30px;
+}
+
+.java-image {
+  width: 12rem;
+  float: right;
+  margin-left: 30px;
+}
+
+.yoga-image {
+  width: 12rem;
+  float: left;
+  margin-right: 30px;
+}
+.movie-image{
+  width: 10rem;
+  float: right;
+  margin-right: 30px;
+}
+
+.hercules-pic{
+  width: 20rem;
+}
+.btn {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 20px;
+  background-color: #66BFBF;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin: 50px auto 60px auto;
+}
+
+
+.watermark {
+  color: white;
+}
